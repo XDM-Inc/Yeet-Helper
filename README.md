@@ -14,7 +14,7 @@ also next to that VotV.exe place this Yeet-Helper.sh next to that exe, thats it!
 
 # Features
 - You can launch the game via wine from this script in BOTH dx11 (Default) OR the experimental Vulkan.
-- You can setup Yeetpatch paths like th game path and exe location DIRECTLY from within this script
+- You can setup Yeetpatch paths like the game path and exe location DIRECTLY from within this script
 - Check and download updates as well as display version. also places a indacator file next to the exe showing you what version you are on at a glance
 
 
