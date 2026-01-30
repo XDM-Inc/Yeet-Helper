@@ -19,3 +19,8 @@ also next to that VotV.exe place this Yeet-Helper.sh next to that exe, thats it!
 
 
 <img width="471" height="403" alt="Screenshot_20260114_221324" src="https://github.com/user-attachments/assets/2b12e4ba-e8a7-458e-ac10-661d0061cbcc" />
+
+
+## ADVISORY ⚠️
+sometimes with SOME shadow builds you cant download automatically as by design by yeet patcher
+you might get an error like "[ERROR] No patch available for >Version<" meaning yeetpatcher itself or the game might need one manual update
