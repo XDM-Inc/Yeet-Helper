@@ -27,7 +27,7 @@ while true; do
         --text="Select an action:" \
         --column="Action" \
         "Launch Game" \
-        "Launch Game (Vulkan EXPERIMENTAL)" \
+        "Launch Game (PRE Alpha 0.9.0h and lower)" \
         "Check/Update Game" \
         "Set up / Config YeetPatch" \
         "Exit")
