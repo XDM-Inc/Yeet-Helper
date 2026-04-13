@@ -27,7 +27,8 @@ while true; do
         --text="Select an action:" \
         --column="Action" \
         "Launch Game" \
-        "Launch Game (PRE Alpha 0.9.0h and lower)" \
+        "Launch Game (MODDED)" \
+        "Launch Game (Vulkan PRE Version_0.9.0h)" \
         "Check/Update Game" \
         "Set up / Config YeetPatch" \
         "Exit")
@@ -41,7 +42,20 @@ while true; do
         exit 0
         ;;
 
-    "Launch Game (Vulkan EXPERIMENTAL)")
+    "Launch Game (MODDED)")
+        WIN_BASE=$(winepath -w "$SCRIPT_DIR" 2>/dev/null)
+        if [ -z "$WIN_BASE" ]; then
+            error "Could not resolve Windows path via winepath. Is Wine configured?"
+            continue
+        fi
+        WINEDLLOVERRIDES="icu=n;dwmapi=n,b;UE4SS=n,b" wine "$GAME_PATH" \
+            --mod-dir "$WIN_BASE\\VotV\\Binaries\\Win64\\Mods" \
+            --pak-dir "$WIN_BASE\\VotV\\Content\\Paks" \
+            --cfg-dir "$WIN_BASE\\VotV\\Saved\\Config\\Windows"
+        exit 0
+        ;;
+
+    "Launch Game (Vulkan PRE Version_0.9.0h)")
         wine "$GAME_PATH" -vulkan
         exit 0
         ;;
